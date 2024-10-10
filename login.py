@@ -1,6 +1,6 @@
-user_dtls=[]
-lib=[]
-
+from admin import  *
+from user import  *
+from list import  *
 def register():
     if len(user_dtls)==0:
         id=100
@@ -20,7 +20,7 @@ def register():
             phone=int(input("enter the  phone number:"))
             username=email
             password=input('enter the password:')
-            user_dtls.append({'name':name,'id':id,'phone':phone,'email':email,'password':password,'books':[]})
+            user_dtls.append({'name':name,'id':id,'phone':phone,'email':email,'shoes':[],'password':password,})
 
 def login():
     uname=input('enter username:')
